@@ -1,1 +1,13 @@
 # CS-350-12127-M01-Emerging-Sys-Arch-Tech
+
+During the Cs 350 Emerging systems and architecture course, we had the opportunity to work with the CC3220S TI Launchpad development board. We had several opportunities to develop code for the board to accomplish various tasks. One in particular that was quite challenging, was blinking a pair of onboard LEDs in morse code fashion. This was a part of a greater lesson on state machines and GPIO interruptions. We need to have the ability to press a button on the board that would change the state of the machine, without compromising the current morse code message being displayed. 
+
+I excelled in breaking the problem into manageable components. By systematically designing the state machine and mapping out the Morse code logic, I was able to maintain clarity throughout the development process. Additionally, I leveraged debugging tools effectively to identify and resolve issues with GPIO interrupts, ensuring the LEDs blinked accurately according to the Morse code patterns. 
+
+I could improve by enhancing my initial approach to error handling. Early in the project, I struggled with unintentional GPIO noise that caused interrupts to trigger incorrectly. Incorporating robust debounce logic or filtering mechanisms from the start would have made the development process smoother. Additionally, I could have documented the code more thoroughly to make it easier for others to understand the logic. 
+
+For future projects, I plan to integrate tools like oscilloscopes for signal debugging and utilize more advanced IDE features, such as live watch windows, to monitor variable states in real-time. Additionally, I will expand my knowledge by exploring online forums like TI's E2E Community, Stack Overflow, and reference materials on embedded programming best practices. 
+
+The skills in designing state machines and handling GPIO interrupts are highly transferable. State machines are a foundational concept in both embedded systems and software design, and the ability to handle asynchronous events through interrupts is critical in many real-world applications, such as robotics, IoT, and communication systems. These skills will also support coursework that involves control systems, operating systems, and real-time application design. 
+
+I structured the code into modular functions, separating the Morse code logic, state machine transitions, and GPIO interrupt handling into distinct sections. I adhered to naming conventions and added comments explaining the purpose of each function and key variables. To make it adaptable, I used configurable parameters for timing intervals and Morse code patterns, allowing the code to be reused for other sequences or timings with minimal modification. 
